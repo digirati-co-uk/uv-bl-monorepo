@@ -1,0 +1,17 @@
+{
+  "name": "uv-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces":  [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build --concurrency 1 --stream",
+    "build-uv": "yarn build && cd ./packages/universalviewer && yarn exec grunt"
+  },
+  "devDependencies": {
+    "lerna": "^3.10.7"
+  }
+}
