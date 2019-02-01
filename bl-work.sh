@@ -6,6 +6,7 @@ cd packages;
 cd -;
 
 cd packages/universalviewer;
+    rm package-lock.json
     npm install
 cd -;
 
