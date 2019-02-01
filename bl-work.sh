@@ -2,6 +2,9 @@
 rm -rf yarn.lock
 
 cd packages;
+    rm -rf ./iiif-av-component
+    rm -rf ./manifesto
+    rm -rf ./universalviewer
     git clone --single-branch --branch feature/sf-bl https://github.com/stephenwf/iiif-av-component.git
     git clone --single-branch --branch feature/optional-type https://github.com/stephenwf/manifesto.git
     git clone --single-branch --branch feature/sf-bl https://github.com/stephenwf/universalviewer.git --recursive
