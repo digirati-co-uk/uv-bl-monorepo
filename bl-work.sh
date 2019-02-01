@@ -5,11 +5,13 @@ cd packages;
     git clone --single-branch --branch feature/sf-bl https://github.com/stephenwf/universalviewer.git --recursive
 cd -;
 
+yarn
+
 cd packages/universalviewer;
     rm package-lock.json
     npm install
 cd -;
 
-yarn && yarn exec lerna bootstrap
+yarn exec lerna link
 
 yarn build
