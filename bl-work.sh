@@ -17,6 +17,7 @@ cd -;
 cd packages/universalviewer;
     rm package-lock.json
     npm install
+    yarn exec grunt build
 cd -;
 
 yarn exec lerna link
