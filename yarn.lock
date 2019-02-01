@@ -85,6 +85,32 @@
     "@types/node" "^7.0.65"
     typescript "^2.8.3"
 
+"@iiif/iiif-gallery-component@1.1.13":
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/@iiif/iiif-gallery-component/-/iiif-gallery-component-1.1.13.tgz#a457ab1824e0be21be1c177ff5f983bca39f5bb0"
+  integrity sha512-VdYAtwfJu0/asiBLyxeRill0mKyQzZSl466IYs6JFrMSkmkpcWubc7i7gM56udgEMdTU5eL5uO757d7w9PJYhg==
+  dependencies:
+    "@edsilv/exjs" "0.5.1"
+    "@edsilv/jquery-plugins" "1.0.3"
+    "@edsilv/utils" "0.2.2"
+    "@iiif/base-component" "1.1.3"
+    "@iiif/manifold" "1.2.36"
+    "@types/jquery" "3.3.14"
+    manifesto.js "3.0.9"
+
+"@iiif/iiif-metadata-component@1.1.13":
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/@iiif/iiif-metadata-component/-/iiif-metadata-component-1.1.13.tgz#7f0630d8ca4612fb84bce728c34f3f13a6f63b91"
+  integrity sha512-57GboCZo+5AZwhSge1vFSs7Ax9COdIYVBBXeVr+Xohx7s935oX3wJU+TWtzw94rKzc6hPpqzsUv8hq/NnMRTBA==
+  dependencies:
+    "@edsilv/exjs" "0.5.1"
+    "@edsilv/jquery-plugins" "1.0.3"
+    "@edsilv/utils" "0.2.2"
+    "@iiif/base-component" "1.1.3"
+    "@iiif/manifold" "1.2.36"
+    "@types/jquery" "3.3.14"
+    manifesto.js "3.0.9"
+
 "@iiif/iiif-tree-component@1.1.12":
   version "1.1.12"
   resolved "https://registry.yarnpkg.com/@iiif/iiif-tree-component/-/iiif-tree-component-1.1.12.tgz#3d95bc7db50e0fdd321b15a29a790f173c3584ce"
@@ -95,26 +121,6 @@
     "@iiif/manifold" "1.2.36"
     "@types/jquery" "3.3.14"
     manifesto.js "3.0.9"
-
-"@iiif/manifold@2.0.0-pre.9":
-  version "2.0.0-pre.9"
-  resolved "https://registry.yarnpkg.com/@iiif/manifold/-/manifold-2.0.0-pre.9.tgz#8e506c10c6a8fa0ccea2215596574ce1d97926e7"
-  integrity sha512-ZS4w8ANLcoyIZPE1ZtvomTYAIP987QpCNMliXdw5IDlxMw3Fe96sfsK/99xuF0kc+uLPvcF9IX5nTdqYdwTYOQ==
-  dependencies:
-    "@edsilv/http-status-codes" "0.0.12"
-    "@iiif/vocabulary" "^1.0.5"
-    "@types/jquery" "^2.0.40"
-    manifesto.js "4.0.0-pre.5"
-
-"@iiif/vocabulary@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@iiif/vocabulary/-/vocabulary-1.0.5.tgz#7082058d55777e52a04efc3cd5e99e926b7181a1"
-  integrity sha512-ufnxmbzN5q8UwtwJKNnAlqInvKI9YwwG/XCA5xDJPi1EctbeGBVl98xJP6d6M8sI3gHRJ+h1xV+Gmn+vkURd9A==
-
-"@iiif/vocabulary@^1.0.5":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@iiif/vocabulary/-/vocabulary-1.0.6.tgz#6caacdb04469a5441e1294a57d797a9a6aa83470"
-  integrity sha512-/3NrRXyLoyhiYYnaWYbIbCm5y99cfGs2I2X/vq8vEtecW3zgyCK1fN+KlO1VrQOukqgCI6k8wn89urBOSpHOMg==
 
 "@lerna/add@3.10.6":
   version "3.10.6"
@@ -808,7 +814,7 @@
   resolved "https://registry.yarnpkg.com/@types/modernizr/-/modernizr-3.2.29.tgz#0182952922144395715c64dd5f86fd36c1aebebe"
   integrity sha1-AYKVKSIUQ5VxXGTdX4b9NsGuvr4=
 
-"@types/node@*", "@types/node@^10.12.18":
+"@types/node@*":
   version "10.12.18"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.18.tgz#1d3ca764718915584fcd9f6344621b7672665c67"
   integrity sha512-fh+pAqt4xRzPfqA6eh3Z2y6fyZavRIumvjhaCL753+TVkGKGhpPeyrJG2JftD0T9q4GF00KjefsQ+PQNDdWQaQ==
@@ -7386,22 +7392,6 @@ less@2.4.0:
     request "2.81.0"
     source-map "^0.5.3"
 
-less@3.8.1:
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/less/-/less-3.8.1.tgz#f31758598ef5a1930dd4caefa9e4340641e71e1d"
-  integrity sha512-8HFGuWmL3FhQR0aH89escFNBQH/nEiYPP2ltDFdQw2chE28Yx2E3lhAIq9Y2saYwLSwa699s4dBVEfCY8Drf7Q==
-  dependencies:
-    clone "^2.1.2"
-  optionalDependencies:
-    errno "^0.1.1"
-    graceful-fs "^4.1.2"
-    image-size "~0.5.0"
-    mime "^1.4.1"
-    mkdirp "^0.5.0"
-    promise "^7.1.1"
-    request "^2.83.0"
-    source-map "~0.6.0"
-
 less@^3.8.1:
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/less/-/less-3.9.0.tgz#b7511c43f37cf57dc87dffd9883ec121289b1474"
@@ -8042,15 +8032,6 @@ manifesto.js@3.0.9:
   dependencies:
     exjs BSick7/exjs#0.5.0
     http-status-codes edsilv/http-status-codes#v0.0.7
-    request "^2.83.0"
-
-manifesto.js@4.0.0-pre.5:
-  version "4.0.0-pre.5"
-  resolved "https://registry.yarnpkg.com/manifesto.js/-/manifesto.js-4.0.0-pre.5.tgz#5db7d3d7a45dd16ea0c6f060796b787cb3a4048b"
-  integrity sha512-xXxZ3vw6Au1B/lsYzZ43QDHa3xRmBbv3spmD/RYs4JycAWZn6R5euNpqud1ezhJ7cTLJkROevG3r2zaMgWqfOg==
-  dependencies:
-    "@edsilv/http-status-codes" "0.0.12"
-    "@iiif/vocabulary" "1.0.5"
     request "^2.83.0"
 
 map-age-cleaner@^0.1.1:
@@ -10446,13 +10427,6 @@ rimraf@2.2.6:
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.6.tgz#c59597569b14d956ad29cacc42bdddf5f0ea4f4c"
   integrity sha1-xZWXVpsU2VatKcrMQr3d9fDqT0w=
 
-rimraf@2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.2.tgz#2ed8150d24a16ea8651e6d6ef0f47c4158ce7a36"
-  integrity sha512-lreewLK/BlghmxtfH36YYVg1i8IAce4TI7oao75I1g245+6BctqTVQiBP3YUJ9C6DQOXJmkYR9X9fCLtCOJc5w==
-  dependencies:
-    glob "^7.0.5"
-
 rimraf@~2.2.6:
   version "2.2.8"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
@@ -11871,11 +11845,6 @@ typescript@3.0.x:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.0.3.tgz#4853b3e275ecdaa27f78fda46dc273a7eb7fc1c8"
   integrity sha512-kk80vLW9iGtjMnIv11qyxLqZm20UklzuR2tL0QAnDIygIUIemcZMxlMWudl9OOt76H3ntVzcTiddQ1/pAAJMYg==
 
-typescript@3.2.2:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.2.2.tgz#fe8101c46aa123f8353523ebdcf5730c2ae493e5"
-  integrity sha512-VCj5UiSyHBjwfYacmDuc/NOk4QQixbE+Wn7MFJuS0nRuPQbof132Pw4u53dm264O8LPc2MVsc7RJNml5szurkg==
-
 typescript@^2.8.3:
   version "2.9.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
@@ -11896,14 +11865,6 @@ uglify-js@2.6.4, uglify-js@~2.6.2:
     uglify-to-browserify "~1.0.0"
     yargs "~3.10.0"
 
-uglify-js@3.4.9, uglify-js@^3.1.4, uglify-js@^3.4.9:
-  version "3.4.9"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.4.9.tgz#af02f180c1207d76432e473ed24a28f4a782bae3"
-  integrity sha512-8CJsbKOtEbnJsTyv6LE6m6ZKniqMiFWmm9sRbopbkGs3gMPPfd3Fh8iIA4Ykv5MgaTbqHr4BaoGLJLZNhsrW1Q==
-  dependencies:
-    commander "~2.17.1"
-    source-map "~0.6.1"
-
 uglify-js@^2.8.22, uglify-js@~2.8.10:
   version "2.8.29"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.29.tgz#29c5733148057bb4e1f75df35b7a9cb72e6a59dd"
@@ -11913,6 +11874,14 @@ uglify-js@^2.8.22, uglify-js@~2.8.10:
     yargs "~3.10.0"
   optionalDependencies:
     uglify-to-browserify "~1.0.0"
+
+uglify-js@^3.1.4, uglify-js@^3.4.9:
+  version "3.4.9"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.4.9.tgz#af02f180c1207d76432e473ed24a28f4a782bae3"
+  integrity sha512-8CJsbKOtEbnJsTyv6LE6m6ZKniqMiFWmm9sRbopbkGs3gMPPfd3Fh8iIA4Ykv5MgaTbqHr4BaoGLJLZNhsrW1Q==
+  dependencies:
+    commander "~2.17.1"
+    source-map "~0.6.1"
 
 uglify-save-license@^0.4.1:
   version "0.4.1"

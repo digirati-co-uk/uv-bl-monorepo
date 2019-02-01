@@ -4,12 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "private": true,
-  "workspaces":  [
-    "packages/*"
-  ],
+  "workspaces":  ["packages/*"],
   "scripts": {
     "build": "lerna run build --concurrency 1 --stream",
-    "build-uv": "yarn build && cd ./packages/universalviewer && yarn exec grunt"
+    "build-uv": "yarn build && cd ./packages/universalviewer && yarn exec grunt",
+    "init-uv": "cd ./packages/universalviewer && yarn install --isolated && yarn exec lerna link"
   },
   "devDependencies": {
     "lerna": "^3.10.7"
