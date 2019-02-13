@@ -6,8 +6,11 @@ cd packages;
     rm -rf ./manifesto
     rm -rf ./universalviewer
     git clone --single-branch --branch feature/sf-bl https://github.com/stephenwf/iiif-av-component.git
+    rm -rf !$/.git
     git clone --single-branch --branch feature/optional-type https://github.com/stephenwf/manifesto.git
-    git clone --single-branch --branch feature/sf-bl https://github.com/stephenwf/universalviewer.git --recursive
+    rm -rf !$/.git
+    git clone --single-branch --branch --recursive feature/sf-bl https://github.com/stephenwf/universalviewer.git
+    rm -rf !$/.git
 cd -;
 
 yarn
