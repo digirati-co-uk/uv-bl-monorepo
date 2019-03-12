@@ -11,7 +11,7 @@
     "init-uv": "cd ./packages/universalviewer && yarn install --isolated && yarn exec lerna link",
     "quick-uv": "cd ./packages/universalviewer && yarn exec grunt sync:npmComponents ts:dev exec:devbuild copy:build copy:dist && notify -t 'done'",
     "watch-uv": "cd ./packages/universalviewer && watchman-make -p 'src/**/*.ts' --make='yarn exec grunt sync:npmComponents ts:dev exec:devbuild copy:build' -t 'copy:dist'",
-    "watch-uv-extern": "watchman-make -p 'packages/*/src/**/*.ts' --make='yarn', -t 'quick-uv'",
+    "watch-uv-extern": "watchman-make -p 'packages/*/src/**/*.ts' --make='yarn' -t 'quick-uv'",
     "uv-examples": "cd ./packages/universalviewer && yarn grunt examples",
     "av-comp": "cd ./packages/iiif-av-component && yarn start",
     "av-watch": "cd ./packages/iiif-av-component && yarn build-ts --watch",
