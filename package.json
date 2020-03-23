@@ -8,7 +8,7 @@
   "scripts": {
     "build": "lerna run build --concurrency 1 --stream",
     "build-uv": "yarn build && cd ./packages/universalviewer && yarn exec grunt",
-    "init-uv": "cd ./packages/universalviewer && yarn install --isolated && yarn exec lerna link",
+    "init-uv": "cd ./packages/universalviewer && npm install && cd ../../ && yarn exec lerna link --force-local",
     "quick-uv": "cd ./packages/universalviewer && yarn exec grunt sync:npmComponents ts:dev exec:devbuild copy:build copy:dist && notify -t 'done'",
     "watch-uv": "cd ./packages/universalviewer && watchman-make -p 'src/**/*.ts' --make='yarn exec grunt sync:npmComponents ts:dev exec:devbuild copy:build' -t 'copy:dist'",
     "watch-uv-extern": "watchman-make -p 'packages/*/src/**/*.ts' --make='yarn' -t 'quick-uv'",
