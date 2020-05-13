@@ -9,7 +9,7 @@ cd packages;
     rm -rf !$/.git
     git clone --single-branch --branch feature/optional-type https://github.com/stephenwf/manifesto.git manifesto
     rm -rf !$/.git
-    git clone --single-branch --branch --recursive feature/sf-bl https://github.com/stephenwf/universalviewer.git universalviewer
+    git clone --single-branch --recursive --branch feature/sf-bl https://github.com/stephenwf/universalviewer.git universalviewer
     rm -rf !$/.git
 cd -;
 
