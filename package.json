@@ -8,18 +8,23 @@
   "scripts": {
     "build": "lerna run build --concurrency 1 --stream",
     "build-uv": "yarn build && cd ./packages/universalviewer && yarn exec grunt",
-    "init-uv": "cd ./packages/universalviewer && npm install && cd ../../ && yarn exec lerna link --force-local",
-    "quick-uv": "cd ./packages/universalviewer && yarn exec grunt sync:npmComponents ts:dist exec:devbuild copy:build copy:dist && terminal-notifier -sound default -message 'Completed'",
+    "uv:grunt": "cd ./packages/universalviewer && yarn exec grunt",
+    "init-uv": "cd ./packages/universalviewer && npm install --ignore-scripts && cd ../../ && yarn exec lerna link --force-local",
+    "quick-uv": "cd ./packages/universalviewer && yarn exec grunt && terminal-notifier -sound default -message 'Completed'",
     "watch-uv": "cd ./packages/universalviewer && watchman-make -p 'src/**/*.ts' --run 'yarn exec grunt sync:npmComponents ts:dist exec:devbuild copy:build copy:dist'",
-    "watch-uv-extern": "watchman-make -p 'packages/iiif-av-component/src/**/*.ts' --run 'yarn quick-uv'",
+    "watch-uv-extern": "watchman-make -p 'packages/iiif-av-component/dist-umd/*.js' --run 'yarn quick-uv'",
     "uv-examples": "cd ./packages/universalviewer && yarn grunt examples",
     "av-comp": "cd ./packages/iiif-av-component && yarn start",
-    "av-watch": "cd ./packages/iiif-av-component && yarn build-ts --watch",
+    "av-watch": "cd ./packages/iiif-av-component && yarn build:commonjs --watch",
     "sync-theme": "cd ./packages/universalviewer && yarn grunt sync:themes",
     "start": "run-p watch-uv watch-uv-extern uv-examples av-comp av-watch"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5",
     "lerna": "^3.10.7"
+  },
+  "resolutions": {
+    "@iiif/manifold": "2.0.2",
+    "manifesto.js": "4.2.0"
   }
 }
